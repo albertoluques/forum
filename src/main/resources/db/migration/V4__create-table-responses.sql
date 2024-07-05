@@ -3,7 +3,7 @@ create table responses(
     id bigint not null auto_increment,
     message varchar(255) not null,
     topic_id bigint not null,
-    creation_date datetime not null,
+    date_time datetime not null,
     author_response_id bigint not null,
     solved tinyint not null,
 
