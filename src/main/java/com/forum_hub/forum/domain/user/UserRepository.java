@@ -1,4 +1,4 @@
-package com.forum_hub.forum.domain.topic.user;
+package com.forum_hub.forum.domain.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.security.core.userdetails.UserDetails;

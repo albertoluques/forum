@@ -1,4 +1,4 @@
-package com.forum_hub.forum.domain.topic.user;
+package com.forum_hub.forum.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-@Table(name = "user")
+@Table(name = "users")
 @Entity(name = "User")
 @Getter
 @NoArgsConstructor
@@ -34,8 +34,13 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return "";
+        return email;
     }
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
 
     @Override
     public boolean isAccountNonExpired() {
