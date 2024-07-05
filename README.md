@@ -30,7 +30,8 @@ ___
 
 ## Database Scheeme
 
-![](images/diagrama base de datos forohub.png)
+![](images/scheeme.png)
+
 
 ## Author
 
