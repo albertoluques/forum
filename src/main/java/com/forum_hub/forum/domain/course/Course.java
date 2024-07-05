@@ -1,4 +1,4 @@
-package com.forum_hub.forum.domain.course.validations;
+package com.forum_hub.forum.domain.course;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,7 +27,14 @@ public class Course {
         this.active = true;
     }
     // method
-    public void updateData(){}
+    public void updateCourseData(UpdateCourseData data){
+        if(data.name() != null) {
+            this.name = data.name();
+        }
+        if (data.category() != null) {
+            this.category = data.category();
+        }
+    }
 
     // getters and setters
 
@@ -59,8 +66,8 @@ public class Course {
         return active;
     }
 
-    public void setActive(Boolean active) {
-        this.active = active;
+    public void setActive() {
+        this.active = !active;
     }
 
 }

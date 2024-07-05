@@ -1,4 +1,4 @@
-package com.forum_hub.forum.domain.course.validations;
+package com.forum_hub.forum.domain.course;
 
 public enum Category {
     FULLSTACK,
